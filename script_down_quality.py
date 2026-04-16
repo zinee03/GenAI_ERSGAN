@@ -6,11 +6,6 @@ import glob
 os.makedirs('LR/satellite', exist_ok=True)
 os.makedirs('satellite_maps', exist_ok=True)
 
-print("Veuillez importer vos captures d'écran dans le dossier 'satellite_maps/' avant de continuer.")
-print("Attente de 15 secondes pour vous laisser le temps d'importer...")
-import time
-time.sleep(15)
-
 # 2. Chercher toutes les images dans le dossier 'images_originales'
 image_paths = glob.glob('satellite_maps/*.*')
 
